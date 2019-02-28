@@ -19,6 +19,8 @@ alias ls="ls -A --color=auto"
 alias bb="bb-wrapper --aur"
 alias up="bb -Syu && flatpak update"
 alias cat="bat --style=plain"
+alias vi="nvim"
+alias sudo="sudo " # to make aliases working with sudo
 mkcd() { mkdir -p $1 && cd $1 }
 
 # KeyBindings
