@@ -5,13 +5,14 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # History
-HISTFILE=~/.histfile
+HISTFILE=~/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 
 # AutoCompletion
 autoload -Uz compinit
 compinit
+zstyle ':completion:*' menu select
 
 # Aliases and custom functions
 alias ls="ls -A --color=auto"
@@ -23,8 +24,8 @@ mkcd() { mkdir -p $1 && cd $1 }
 # KeyBindings
 bindkey "^[[1;5D" backward-word              # CTRL-LEFT
 bindkey "^[[1;5C" forward-word               # CTRL-RIGHT
-bindkey '^[[A' history-substring-search-up   # UP
-bindkey '^[[B' history-substring-search-down # DOWN
+bindkey "^[[A" history-substring-search-up   # UP
+bindkey "^[[B" history-substring-search-down # DOWN
 
 # Tilix
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
