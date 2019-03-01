@@ -2,6 +2,7 @@
 
 ln -sf ~/.dotfiles/.zshrc ~/.zshrc
 
+mkdir ~/.config
 ln -sf ~/.dotfiles/.config/chromium-flags.conf ~/.config/chromium-flags.conf
 
 mkdir ~/.config/nvim
