@@ -17,8 +17,8 @@ zstyle ':completion:*' menu select
 
 # Aliases and custom functions
 alias ls="ls -A --color=auto"
-alias bb="bb-wrapper --aur"
-alias up="bb -Syu && flatpak update"
+alias pm="sudo pacman"
+alias up="yay && flatpak update"
 alias cat="bat --style=plain"
 alias vi="nvim"
 alias sudo="sudo " # to make aliases working with sudo
