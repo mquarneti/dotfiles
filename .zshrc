@@ -20,7 +20,6 @@ alias ls="ls -A --color=auto"
 alias pm="sudo pacman"
 alias up="yay && flatpak update"
 alias cat="bat --style=plain"
-alias vi="nvim"
 alias sudo="sudo " # to make aliases working with sudo
 mkcd() { mkdir -p $1 && cd $1 }
 
