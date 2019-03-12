@@ -16,7 +16,8 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' menu select
 
 # Aliases and custom functions
-alias ls="ls -A --color=auto"
+alias ls="lsd"
+alias vi="vim"
 alias pm="sudo pacman"
 alias up="yay && flatpak update"
 alias cat="bat --style=plain"
