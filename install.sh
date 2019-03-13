@@ -1,8 +1,8 @@
 #!/usr/bin/bash
 
-ln -sf ~/.dotfiles/.zshrc ~/.zshrc
+ln -sf ~/.dotfiles/.zshrc ~
 
-ln -sf ~/.dotfiles/.vimrc ~/.vimrc
+mkdir -p ~/.config/nvim
+ln -sf ~/.dotfiles/.config/nvim/init.vim ~/.config/nvim
 
-mkdir ~/.config
 ln -sf ~/.dotfiles/.config/chromium-flags.conf ~/.config/chromium-flags.conf

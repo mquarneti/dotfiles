@@ -17,8 +17,14 @@ zstyle ':completion:*' menu select
 
 # Aliases and custom functions
 alias ls="lsd"
-alias vi="vim"
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+alias vi="nvim"
 alias pm="sudo pacman"
+alias pms="sudo pacman -S"
+alias pmr="sudo pacman -Rs"
 alias up="yay && flatpak update"
 alias cat="bat --style=plain"
 alias sudo="sudo " # to make aliases working with sudo
