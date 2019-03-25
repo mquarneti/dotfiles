@@ -12,15 +12,15 @@ SAVEHIST=1000
 # AutoCompletion
 autoload -Uz compinit
 compinit
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
-zstyle ':completion:*' menu select
+zstyle ":completion:*" matcher-list "m:{a-zA-Z}={A-Za-z}"
+zstyle ":completion:*" menu select
 
 # Aliases and custom functions
 alias ls="lsd"
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
+alias l="ls -l"
+alias la="ls -a"
+alias lla="ls -la"
+alias lt="ls --tree"
 alias vi="nvim"
 alias pm="sudo pacman"
 alias pms="sudo pacman -S"
@@ -35,8 +35,3 @@ bindkey "^[[1;5D" backward-word              # CTRL-LEFT
 bindkey "^[[1;5C" forward-word               # CTRL-RIGHT
 bindkey "^[[A" history-substring-search-up   # UP
 bindkey "^[[B" history-substring-search-down # DOWN
-
-# Tilix
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-    source /etc/profile.d/vte.sh
-fi
