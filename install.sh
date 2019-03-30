@@ -25,6 +25,6 @@ fi
 
 # code (visual studio code OSS build)
 if $INSTALL_CODE; then
-    mkdir -p '~/.config/Code - OSS'
-    ln -sf '~/.dotfiles/.config/Code - OSS/settings.json' '~/.config/Code - OSS'
+    mkdir -p ~/.config/Code\ -\ OSS
+    ln -sf ~/.dotfiles/.config/Code\ -\ OSS/settings.json ~/.config/Code\ -\ OSS
 fi
