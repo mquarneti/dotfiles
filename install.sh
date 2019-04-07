@@ -11,8 +11,8 @@ ln -sf ~/.dotfiles/.config/nvim/init.vim ~/.config/nvim
 
 # set the correct hwdec method
 case $PRESET in
-    desktop) echo '\nhwdec=nvdec' >> ~/.dotfiles/.config/mpv/mpv.conf;;
-    laptop)  echo '\nhwdec=vaapi' >> ~/.dotfiles/.config/mpv/mpv.conf;;
+    desktop) echo "\nhwdec=nvdec" >> ~/.dotfiles/.config/mpv/mpv.conf;;
+    laptop)  echo "\nhwdec=vaapi" >> ~/.dotfiles/.config/mpv/mpv.conf;;
 esac
 
 mkdir -p ~/.config/mpv
