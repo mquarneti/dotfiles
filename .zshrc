@@ -36,5 +36,5 @@ mkcd() { mkdir -p $1 && cd $1 }
 # KeyBindings
 bindkey "^[[1;5D" backward-word                 # CTRL-LEFT
 bindkey "^[[1;5C" forward-word                  # CTRL-RIGHT
-bindkey "^[[1;5A" history-substring-search-up   # UP
-bindkey "^[[1;5B" history-substring-search-down # DOWN
+bindkey "^[[A" history-substring-search-up      # UP
+bindkey "^[[B" history-substring-search-down    # DOWN
