@@ -29,7 +29,7 @@ alias la="ls -a"
 alias lla="ls -la"
 alias lt="ls --tree"
 alias vi="nvim"
-alias cat="bat --style=plain"
+alias cat="bat -p --paging=never"
 alias sudo="sudo " # to make aliases working with sudo
 mkcd() { mkdir -p $1 && cd $1 }
 
