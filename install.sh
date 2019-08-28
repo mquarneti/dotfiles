@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 # zsh
 if [ $(which zsh 2> /dev/null) ]; then
